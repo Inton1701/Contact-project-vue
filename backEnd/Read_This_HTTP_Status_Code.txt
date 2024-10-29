@@ -1,0 +1,68 @@
+1xx Informational Responses
+    100 Continue: Initial part of a request has been received, and the client can continue.
+    101 Switching Protocols: Server is switching protocols as requested by the client.
+    102 Processing: Request is being processed but no response is available yet (WebDAV).
+    103 Early Hints: Preliminary information to begin preloading resources before the final response.
+2xx Success
+    200 OK: Request was successful.
+    201 Created: Request has been fulfilled, and a new resource has been created.
+    202 Accepted: Request accepted but not yet acted upon.
+    203 Non-Authoritative Information: Non-original response, transformed by a proxy.
+    204 No Content: Successful response without a message body.
+    205 Reset Content: Instructs the client to reset the document view.
+    206 Partial Content: Partial content returned in response to a range request.
+    207 Multi-Status: Provides multiple status codes for different parts of a request (WebDAV).
+    208 Already Reported: Results previously returned, avoiding duplicates (WebDAV).
+    226 IM Used: Server fulfilled a GET request using an instance-manipulation.
+3xx Redirection
+    300 Multiple Choices: Multiple options for the resource.
+    301 Moved Permanently: Resource has moved permanently to a new URI.
+    302 Found: Resource temporarily located at a different URI.
+    303 See Other: Redirect to a different URI to retrieve the resource.
+    304 Not Modified: Cached resource has not been modified.
+    305 Use Proxy: Resource must be accessed through a proxy (deprecated).
+    306 (Unused): Reserved for future use, no longer in use.
+    307 Temporary Redirect: Resource temporarily located at a different URI, method should not change.
+    308 Permanent Redirect: Resource permanently located at a new URI, method should not change.
+4xx Client Errors
+    400 Bad Request: Server could not understand the request.
+    401 Unauthorized: Authentication is required.
+    402 Payment Required: Reserved for future use (typically unused).
+    403 Forbidden: Server refuses to fulfill the request.
+    404 Not Found: Requested resource could not be found.
+    405 Method Not Allowed: Method used is not supported for the resource.
+    406 Not Acceptable: Resource not available in acceptable format.
+    407 Proxy Authentication Required: Client must authenticate with a proxy.
+    408 Request Timeout: Client took too long to send the request.
+    409 Conflict: Request conflicts with the current state of the resource.
+    410 Gone: Resource is no longer available and will not be available again.
+    411 Length Required: Content-Length header is required.
+    412 Precondition Failed: Preconditions in headers were not met.
+    413 Payload Too Large: Request entity is too large to be processed.
+    414 URI Too Long: Requested URI is too long to process.
+    415 Unsupported Media Type: Media format is not supported by the server.
+    416 Range Not Satisfiable: Range specified is invalid.
+    417 Expectation Failed: Server cannot meet the requirements of the Expect header.
+    418 I'm a teapot: A humorous response (RFC 2324).
+    421 Misdirected Request: Request was directed to a server unable to produce a response.
+    422 Unprocessable Entity: Request was well-formed but could not be processed (WebDAV).
+    423 Locked: Resource is locked (WebDAV).
+    424 Failed Dependency: Request failed due to a failed dependency (WebDAV).
+    425 Too Early: Server is unwilling to risk processing the request that might be replayed.
+    426 Upgrade Required: Client should switch to a different protocol.
+    428 Precondition Required: Server requires the request to be conditional.
+    429 Too Many Requests: Client sent too many requests in a given time.
+    431 Request Header Fields Too Large: Headers too large to process.
+    451 Unavailable For Legal Reasons: Resource cannot be accessed due to legal restrictions.
+5xx Server Errors
+    500 Internal Server Error: Server encountered an unexpected condition.
+    501 Not Implemented: Server does not support the request method.
+    502 Bad Gateway: Server received an invalid response from an upstream server.
+    503 Service Unavailable: Server is unavailable (overloaded or under maintenance).
+    504 Gateway Timeout: Upstream server failed to respond in time.
+    505 HTTP Version Not Supported: Server does not support the HTTP protocol version.
+    506 Variant Also Negotiates: Content negotiation for the request resulted in a circular reference.
+    507 Insufficient Storage: Server unable to store the representation (WebDAV).
+    508 Loop Detected: Infinite loop encountered while processing request (WebDAV).
+    510 Not Extended: Further extensions to the request are required.
+    511 Network Authentication Required: Client needs to authenticate to gain network access.
